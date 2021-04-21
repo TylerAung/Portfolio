@@ -1,0 +1,222 @@
+/* ============================================== */
+/* !=======Home Page SVG SERVICE SECTION ======== */
+/* ============================================== */
+
+#HomeRowBase{
+  background-color: var(--siteBG3-Color);
+}
+
+#HomeRows{
+  width: 100%;
+  max-width: 1600px;
+  background-color: var(--siteBG3-Color);
+  margin: auto;
+}
+
+.pWhitespace{
+  white-space: pre-line;
+  font-family: var(--Font-R3);
+}
+#svcHeadSpan{
+  font-size: 1rem;
+  color: var(--siteText2-Color);
+  font-family: var(--Font-R2);
+  font-weight: 700;
+}
+
+.svgTabHeader{
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+
+}
+
+.svcHeader{
+  color: var(--siteText-Color);
+  font-size: 36px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  height: 100%;
+}
+
+div#TwoRthreeC{
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, minmax(150px, auto));
+  gap: 30px 10px;
+  padding: 10px 15px;
+  /* Opacity on background image without affecting the children */
+  /* background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.2)), url(../assets/img/greenGeometry.jpg) no-repeat 100% 100%; */
+  /* background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.2)); */
+  /* background-size: cover; */
+  }
+
+  /* div#TwoRthreeC div{
+      border: solid 1px var(--siteFG-Color);
+  } */
+  div#TwoRthreeC div:hover{
+      box-shadow: 0px 0px 6px 3px #000;
+      background-color: var(--siteFG-Color);
+  }
+
+  div#TwoRthreeC :nth-child(1) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+  }
+
+  div#TwoRthreeC :nth-child(2) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+  }
+  div#TwoRthreeC :nth-child(3) {
+      grid-column: 3/3;
+      grid-row: 1/2;
+
+  }
+  div#TwoRthreeC :nth-child(4) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+
+  }
+  div#TwoRthreeC :nth-child(5) {
+      grid-column: 2/3;
+      grid-row: 2/3;
+
+  }
+  div#TwoRthreeC :nth-child(6) {
+      grid-column: 3/3;
+      grid-row: 2/3;
+
+  }
+  svg.ICONS{
+      fill: var(--siteHL-Color);
+      width: 100px;
+      height: 100px !important;
+      display: block;
+      margin: auto;
+      /* background-color: chocolate; */
+      /* transform: translate(3px, 5px); */
+  }
+  .svgElab{
+      width: 80%;
+      text-align: justify;
+      margin: auto auto;
+  }
+
+  .path {
+      stroke-dasharray: 100;
+      stroke-dashoffset: 1000;
+      animation: dash 10s linear infinite;
+    }
+
+    @keyframes dash {
+      from {
+        stroke-dashoffset: 0;
+      }
+      to {
+        stroke-dashoffset: 1000;
+      }
+    }
+
+    .pathV2 {
+      stroke-dasharray: 500 50;
+      stroke-dashoffset: 1000;
+      animation: dash 10s linear infinite;
+    }
+
+    @keyframes dashV2 {
+      from {
+        stroke-dashoffset: 0;
+      }
+      to {
+        stroke-dashoffset: 1000;
+      }
+    }
+
+  @media screen and (max-width: 850px){
+      div#TwoRthreeC{
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, minmax(80px, auto));
+          gap: 30px 10px;
+          padding: 10px 15px;
+          }
+          div#TwoRthreeC :nth-child(1) {
+              grid-column: 1/2;
+              grid-row: 1/2;
+          }
+
+          div#TwoRthreeC :nth-child(2) {
+              grid-column: 2/3;
+              grid-row: 1/2;
+          }
+          div#TwoRthreeC :nth-child(3) {
+              grid-column: 1/2;
+              grid-row: 2/3;
+
+          }
+          div#TwoRthreeC :nth-child(4) {
+              grid-column: 2/3;
+              grid-row: 2/3;
+
+          }
+          div#TwoRthreeC :nth-child(5) {
+              grid-column: 1/2;
+              grid-row: 3/4;
+
+          }
+          div#TwoRthreeC :nth-child(6) {
+              grid-column: 2/3;
+              grid-row: 3/4;
+
+          }
+  }
+
+
+  @media screen and (max-width: 550px){
+      .svgHeader{
+          height: 20px;
+      }
+          div#TwoRthreeC{
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(6, minmax(320px, auto));
+          gap: 30px 10px;
+          padding: 10px 15px;
+          font-size: 1rem;
+          }
+
+          div#TwoRthreeC :nth-child(1) {
+              grid-column: 1/2;
+              grid-row: 1/2;
+          }
+
+          div#TwoRthreeC :nth-child(2) {
+              grid-column: 1/2;
+              grid-row: 2/3;
+          }
+          div#TwoRthreeC :nth-child(3) {
+              grid-column: 1/2;
+              grid-row: 3/4;
+
+          }
+          div#TwoRthreeC :nth-child(4) {
+              grid-column: 1/2;
+              grid-row: 4/5;
+
+          }
+          div#TwoRthreeC :nth-child(5) {
+              grid-column: 1/2;
+              grid-row: 5/6;
+
+          }
+          div#TwoRthreeC :nth-child(6) {
+              grid-column: 1/2;
+              grid-row: 6/7;
+
+          }
+  }

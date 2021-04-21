@@ -1,0 +1,127 @@
+<h1 class="PgMargin">Portfolio</h1>
+<p>Articles concept, count length of description, if odd index  render left, if even index, render right, if img = null then render block content or so</p>
+<p>
+  rich text editor(tiny mce)
+  md content (mark down content)
+  nvarcharmax(string)
+
+  blog.net engine
+
+  Create Entry Plan
+  Form "Title, Img(Blob), rich text editor, Technologies Checkbox"
+
+  https://www.youtube.com/watch?v=r4LlIhyQ9GY
+</p>
+
+<section class="ArticlesGrid">
+    <div *ngFor="let article of articles" class="windowsBox">
+        <article class="ui-titlebar">
+        <!--<div class="ui-titleicon"></div>-->
+            <h4 class="ui-titletext">{{article.title}}</h4>
+                    <!-- <div class="ui-titlecontrols"></div> -->
+                        <button class="ui-btn minimize">
+                            <svg x="0px" y="0px" viewBox="0 0 10.2 1"><rect x="0" y="50%" width="10.2" height="1" /></svg>
+                        </button><button class="ui-btn maximize">
+                            <svg viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z" /></svg>
+                        </button><button class="ui-btn close">
+                            <svg viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1" /></svg>
+                        </button>
+
+        </article>
+        <div class="windowsScreen">
+            <img src={{article.cover}} alt="image">
+            <p class="windowsTech">Technologies:
+                <span class="THtml"></span>
+                <span class="TCss"></span>
+                <span class="TJs"></span>
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- <img src="/assets/img/EdnaCover.jpg" alt="image">
+<img src="assets/img/EdnaCover.jpg" alt="image">
+<img src="/src/assets/img/EdnaCover.jpg" alt="image">
+<img src="src/assets/img/EdnaCover.jpg" alt="image">
+<img src="/img/PortfolioReferences/IntoECover.jpg" alt="image">
+<img src="img/PortfolioReferences/IntoECover.jpg" alt="image">
+<img src="../assets/img/IntoECover.JPG" alt="image">
+<img src="../assets/img/EdnaCover.JPG" alt="image">
+<img src="../assets/img/IntoECover.JPG" alt="image"> -->
+
+<div height="500px" width="300px">
+<article class="ui-titlebar">
+  <!--<div class="ui-titleicon"></div>-->
+      <h4 class="ui-titletext">Title</h4>
+              <!-- <div class="ui-titlecontrols"></div> -->
+                  <button class="ui-btn minimize">
+                      <svg x="0px" y="0px" viewBox="0 0 10.2 1"><rect x="0" y="50%" width="10.2" height="1" /></svg>
+                  </button><button class="ui-btn maximize">
+                      <svg viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z" /></svg>
+                  </button><button class="ui-btn close">
+                      <svg viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1" /></svg>
+                  </button>
+
+  </article>
+  <div class="windowsScreen">
+      <img src="../assets/img/IntoECover.JPG" alt="image">
+
+      <a class="button" href="#popup1">Let me Pop up</a>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Here i am</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Thank to pop me out of that button, but now i'm done so you can close this window.
+          </div>
+        </div>
+      </div>
+
+      <p class="windowsTech">Technologies:
+          <span class="THtml"></span>
+          <span class="TCss"></span>
+          <span class="TJs"></span>
+      </p>
+  </div>
+
+  <article class="ui-titlebar">
+    <!--<div class="ui-titleicon"></div>-->
+        <h4 class="ui-titletext">Title</h4>
+                <!-- <div class="ui-titlecontrols"></div> -->
+                    <button class="ui-btn minimize">
+                        <svg x="0px" y="0px" viewBox="0 0 10.2 1"><rect x="0" y="50%" width="10.2" height="1" /></svg>
+                    </button><button class="ui-btn maximize">
+                        <svg viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z" /></svg>
+                    </button><button class="ui-btn close">
+                        <svg viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1" /></svg>
+                    </button>
+
+    </article>
+    <div class="windowsScreen">
+        <img src="../assets/img/EdnaCover.JPG" alt="image">
+
+        <div class="box">
+          <a class="button" href="#popup1">Let me Pop up</a>
+        </div>
+
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Here i am</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+              Thank to pop me out of that button, but now i'm done so you can close this window.
+            </div>
+          </div>
+        </div>
+
+        <p class="windowsTech">Technologies:
+            <span class="THtml"></span>
+            <span class="TCss"></span>
+            <span class="TJs"></span>
+        </p>
+    </div>
+
+</div>

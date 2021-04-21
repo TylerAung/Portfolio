@@ -1,0 +1,367 @@
+/* ============================================== */
+/* !===========Articles Grid SECTION ============ */
+/* ============================================== */
+
+    /* .ArticlesGrid{
+    background-color: var(--siteBG3-Color);
+  }
+
+  .HomeRows{
+    width: 100%;
+    max-width: 1600px;
+    background-color: var(--siteBG3-Color);
+    margin: auto;
+  }
+
+  .pWhitespace{
+    white-space: pre-line;
+    font-family: var(--Font-R3);
+  }
+  #svcHeadSpan{
+    font-size: 1rem;
+    color: var(--siteText2-Color);
+    font-family: var(--Font-R2);
+    font-weight: 700;
+  }
+
+  .svgTabHeader{
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+
+  }
+
+  .svcHeader{
+    color: var(--siteText-Color);
+    font-size: 36px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100%;
+  } */
+
+  .ArticlesGrid{
+    max-width: 1600px;
+    max-height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(450px, auto));
+    gap: 30px 10px;
+    padding: 10px 15px;
+    /* Opacity on background image without affecting the children */
+    /* background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.2)), url(../assets/img/greenGeometry.jpg) no-repeat 100% 100%; */
+    /* background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.2)); */
+    /* background-size: cover; */
+    }
+
+    /* .ArticlesGrid div{
+        border: solid 1px var(--siteFG-Color);
+    } */
+    .ArticlesGrid div:hover{
+        box-shadow: 0px 0px 6px 3px #000;
+        /* background-color: var(--siteFG-Color); */
+    }
+
+    .ArticlesGrid :nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .ArticlesGrid :nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .ArticlesGrid :nth-child(3) {
+        grid-column: 3/3;
+        grid-row: 1/2;
+
+    }
+    .ArticlesGrid :nth-child(4) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+    .ArticlesGrid :nth-child(5) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+    }
+    .ArticlesGrid :nth-child(6) {
+        grid-column: 3/3;
+        grid-row: 2/3;
+
+    }
+
+    @media screen and (max-width: 1450px){
+        .ArticlesGrid{
+            grid-template-rows: repeat(2, minmax(350px, auto));
+            gap: 30px 30px;
+            padding: 10px 15px;
+            }
+
+    }
+
+    @media screen and (max-width: 1250px){
+        .ArticlesGrid{
+            grid-template-rows: repeat(2, minmax(300px, auto));
+            gap: 30px 20px;
+            padding: 10px 15px;
+            }
+
+    }
+
+    @media screen and (max-width: 850px){
+        .ArticlesGrid{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, minmax(80px, auto));
+            gap: 30px 10px;
+            padding: 10px 15px;
+            }
+            .ArticlesGrid :nth-child(1) {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            .ArticlesGrid :nth-child(2) {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+            .ArticlesGrid :nth-child(3) {
+                grid-column: 1/2;
+                grid-row: 2/3;
+
+            }
+            .ArticlesGrid :nth-child(4) {
+                grid-column: 2/3;
+                grid-row: 2/3;
+
+            }
+            .ArticlesGrid :nth-child(5) {
+                grid-column: 1/2;
+                grid-row: 3/4;
+
+            }
+            .ArticlesGrid :nth-child(6) {
+                grid-column: 2/3;
+                grid-row: 3/4;
+
+            }
+    }
+
+
+    @media screen and (max-width: 550px){
+        .svgHeader{
+            height: 20px;
+        }
+            .ArticlesGrid{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, minmax(320px, auto));
+            gap: 30px 10px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            }
+
+            .ArticlesGrid :nth-child(1) {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            .ArticlesGrid :nth-child(2) {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .ArticlesGrid :nth-child(3) {
+                grid-column: 1/2;
+                grid-row: 3/4;
+
+            }
+            .ArticlesGrid :nth-child(4) {
+                grid-column: 1/2;
+                grid-row: 4/5;
+
+            }
+            .ArticlesGrid :nth-child(5) {
+                grid-column: 1/2;
+                grid-row: 5/6;
+
+            }
+            .ArticlesGrid :nth-child(6) {
+                grid-column: 1/2;
+                grid-row: 6/7;
+
+            }
+    }
+
+/* ============================================== */
+/* !=============Windows Title Bar============== */
+/* ============================================== */
+
+.ui-titlebar {
+	display: flex;
+	width: 100%;
+	height: 32px;
+	background: var(--siteFG-Color);
+	user-select: none;
+	cursor: default;
+    /* border: 0px solid var(--siteFG-Color); */
+    border-radius: 15px 15px 0 0;
+}
+.ui-titleicon {
+	flex-grow: 1;
+	max-width: 32px;
+	max-height: 32px;
+}
+.ui-titletext {
+	flex-grow: 2;
+	max-height: 32px;
+	width: auto;
+	font: 12px/32px "Segoe UI", Arial, sans-serif;
+	color: var(--siteText2-Color);
+	text-indent: 10px;
+}
+.ui-titlecontrols {
+	max-width: 144px;
+	max-height: 32px;
+	flex-grow: 1;
+}
+.ui-btn {
+	margin: 0;
+	width: 48px;
+	height:32px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+.ui-btn:hover {
+	background: rgba(255,255,255,.1);
+}
+
+.ui-btn.close:hover {
+	border-radius: 0 15px 0 0;
+}
+
+.ui-btn.close:hover {
+	background: #e81123;
+}
+.ui-btn svg path,
+.ui-btn svg rect,
+.ui-btn svg polygon {
+	fill: #fff;
+}
+.ui-btn svg {
+  width: 10px;
+  height: 10px;
+}
+
+.windowsBox{
+    height: 100%;
+    width: 100%;
+}
+
+.windowsScreen{
+    width: 100%;
+    height: calc(100% - 75px);
+    position: relative;
+}
+.windowsScreen img{
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/PortfolioReferences/EdnaCover.JPG);
+    background-size: cover;
+}
+.windowsTech{
+    height: 40px;
+    background: var(--siteFG-Color);
+    line-height: 2.5;
+}
+
+/* !Windows Box */
+
+/* .box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+} */
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: var(--siteFG-Color);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+

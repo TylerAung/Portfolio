@@ -1,0 +1,193 @@
+/* ============================================== */
+/* !============= SLIDE SHOW SECTION ============ */
+/* ============================================== */
+/* svg#svgLight{
+    margin-top: 20px;
+} */
+#TwoGridSlide{
+  display: flex !important;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: var(--siteBG2-Color);
+
+}
+
+#ldgPgME{
+  width: 100%;
+  height: 500px;
+}
+
+#GridObj{
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.Slidecontainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+/* % width = no of slides x 100 */
+.Slidecontainer  .slider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600%;
+  height: 100%;
+  float: left;
+  animation: SlideAnimate 20s linear infinite;
+}
+
+/* % width = 100% / no of slides, Handles Each slide */
+.Slidecontainer .slider .slide{
+  position: relative;
+  width: 16.67%;
+  height: 100%;
+  float: left;
+}
+
+/* % position caption in slideshow */
+.Slidecontainer .slider .slide .caption{
+  margin: 135px 10% 0;
+/* position: absolute;
+bottom: 60px;
+left: 60px;
+right: 60px; */
+padding: 15px ;
+/* background: rgba(0,0,0, 0.5);
+box-sizing: border-box; */
+transition: 0.5s;
+}
+
+.Slidecontainer .slider .slide .caption h4{
+  margin: auto auto 10px;
+  padding: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.Slidecontainer .slider .slide .caption p{
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+/*
+.container .slider .slide.s1{
+  background-color: blueviolet;
+  /* ? Only if got IMG */
+  /*
+  background-size: cover;
+  background-position: center;
+}*/
+/*
+.container .slider .slide.s2{
+  background-color: burlywood;
+}
+.container .slider .slide.s3{
+  background-color: fuchsia;
+}
+.container .slider .slide.s4{
+  background-color: greenyellow;
+}
+*/
+
+.pMainhead{
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 30px 0;
+  text-align: center;
+  font-family: var(--Font-R3);
+}
+#tidBlinker{
+  animation-name: blinker;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+ @keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+ }
+
+@keyframes SlideAnimate{
+  0%{
+      left: 0;
+  }
+  15%{
+      left: 0;
+  }
+  20%{
+      left: -100%;
+  }
+  35%{
+      left: -100%;
+  }
+  40%{
+      left: -200%;
+  }
+  55%{
+      left: -200%;
+  }
+  60%{
+      left: -300%;
+  }
+  75%{
+      left: -300%;
+  }
+  80%{
+      left: -400%;
+  }
+  95%{
+      left:-400%;
+  }
+
+  100%{
+      left:-500%;
+  }
+}
+
+@media (max-width: 550px){
+  #TwoGridSlide{
+      flex-direction: column;
+  }
+
+  #ldgPgME{
+      height: 95vw;
+  }
+  .container .slider .slide .caption{
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      padding: 20px;
+
+      }
+
+      .Slidecontainer .slider .slide .caption{
+          margin: 80px 10% 0;
+      }
+
+      .Slidecontainer{
+          height: 335px;
+      }
+/*
+      .container .slider .slide .caption h4{
+          margin: auto auto 10px;
+          padding: 0;
+          text-align: center;
+      }
+
+      .container .slider .slide .caption p{
+          margin: auto;
+          padding: 0;
+          text-align: center;
+      } */
+}

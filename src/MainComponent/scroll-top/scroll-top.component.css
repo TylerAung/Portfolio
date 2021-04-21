@@ -1,0 +1,32 @@
+    .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right:  15px;
+    /* top: 40px; */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+   }
+   .show-scrollTop {
+    visibility: visible;
+    opacity: 0.5;
+   }
+
+   .scroll-to-top:hover svg{
+    transform: scale(1.25, 1.25);
+   }
+
+   #arrowUp{
+    display: block;
+    margin: auto;
+    fill: var(--siteHL-Color);
+    width: 20px;
+    height: 20px;
+    }
+
+
+
+

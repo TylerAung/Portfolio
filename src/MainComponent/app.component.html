@@ -1,0 +1,12 @@
+<ng-particles
+[id]="id"
+[options]="particlesUrl"
+(particlesLoaded)="particlesLoaded($event)"
+(particlesInit)="particlesInit($event)">
+</ng-particles>
+<section class="particleSection">
+    <p id="notShuffle"><span>Greetings,</span> I'm Tyler</p>
+    <p #shuffle class="shuf"></p>
+</section>
+<app-services></app-services>
+<app-tidbits></app-tidbits>

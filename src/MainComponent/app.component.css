@@ -1,0 +1,104 @@
+  /*
+  background {
+    display: flex;
+  } */
+
+  .particleSection {
+    position: absolute;
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-family: var(--Font-R2);
+    font-weight: 700;
+    /* text-transform: uppercase; */
+  }
+
+  p#notShuffle span {
+    color: white;
+  }
+
+  #notShuffle {
+    color: var(--siteHL-Color);
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .shuf {
+    white-space: pre-line;
+    line-height: 6rem;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: var(--Font-R1);
+    text-transform: uppercase;
+  }
+
+  #particles-js {
+    margin: 0 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #12181b;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 2050px) {
+    #notShuffle {
+      font-size: 5rem;
+      letter-spacing: 0.5rem;
+    }
+
+    .shuf {
+      font-size: 4rem;
+    }
+  }
+
+  @media screen and (max-width: 1950px) {
+    #notShuffle {
+      font-size: calc(5rem - 0.2vw);
+      letter-spacing: 0.5rem;
+    }
+
+    .shuf {
+      font-size: calc(4rem - 0.2vw);
+    }
+  }
+
+  @media screen and (max-width: 1388px) {
+    #notShuffle {
+      font-size: 4.5rem;
+      letter-spacing: 0.5rem;
+    }
+
+    .shuf {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    #notShuffle {
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
+    }
+
+    .shuf {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .particleSection {
+      width: 80%;
+      left: 10%;
+      transform: translate(0, -50%);
+    }
+    #notShuffle {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      line-height: 2.5rem;
+    }
+
+    .shuf {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+  }

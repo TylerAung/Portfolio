@@ -1,1 +1,11 @@
-<p>About</p>
+<h1 class="PgMargin">Welcome to my Blog</h1>
+
+<app-blogsCreate></app-blogsCreate>
+
+<section class="grid">
+    <div *ngFor="let item of articles.list">
+        <h1>{{item.BlogTitle}}</h1>
+        <p>{{item.BlogContent}}</p>
+        <p>{{item.LastUpdatedOn}}</p>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+
+
+<form novalidate #form="ngForm" (submit)="onSubmit(form)">
+    <label>Blog ID</label>
+    <input name="BlogId" [value]="details.formData.BlogId" disabled #BlogID="ngModel" [(ngModel)]="details.formData.BlogId"/>
+    <br>
+    <label>Title</label>
+    <input placeholder="Blog Title" name="BlogTitle" #BlogTitle="ngModel" [(ngModel)]="details.formData.BlogTitle" required minlength="5" maxlength="75" [class.invalid]="BlogTitle.invalid && BlogTitle.touched">
+    <br>
+
+    <label>Cover Image</label>
+    <input placeholder="Cover" name="BlogCover" #BlogCover="ngModel" [(ngModel)]="details.formData.BlogCover" required>
+    <br>
+
+    <label>Description</label>
+    <input placeholder="Rich Text Editor" name="BlogContent" #BlogContent="ngModel" [(ngModel)]="details.formData.BlogContent" required>
+    <br>
+
+    <input hidden disabled name="LastUpdatedOn" #LastUpdatedOn="ngModel" [(ngModel)]="details.formData.LastUpdatedOn" required>
+    <br>
+
+    <!-- <label>Title</label>
+    <input placeholder="Blog Title" name="BlogTitle" #BlogTitle="ngModel" [(ngModel)]="details.formData.BlogTitle">
+    <br> -->
+    <button type="submit" [disabled]="form.invalid">SUBMIT</button>
+</form>

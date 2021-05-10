@@ -1,11 +1,11 @@
 import { Guid } from "guid-typescript";
 
 export class BlogDetail {
-    BlogId: Guid = Guid.create();
+    BlogId: string = Guid.create().toString();
     BlogTitle : string = "";
     BlogContent : string = "";
     BlogCover : string = "";
-    LastUpdatedOn : number = Date.now();
+    LastUpdatedOn : string = new Date(Date.now()).toJSON();
 
     constructor(){
 

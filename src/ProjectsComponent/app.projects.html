@@ -51,6 +51,8 @@
 <img src="../assets/img/EdnaCover.JPG" alt="image">
 <img src="../assets/img/IntoECover.JPG" alt="image"> -->
 
+https://codepen.io/Gugiui/pen/vweXYR
+
 <div height="500px" width="300px">
 <article class="ui-titlebar">
   <!--<div class="ui-titleicon"></div>-->
@@ -68,17 +70,15 @@
   <div class="windowsScreen">
       <img src="../assets/img/IntoECover.JPG" alt="image">
 
-      <a class="button" href="#popup1">Let me Pop up</a>
+      <a href="#0" id="info" class="info popup-trigger" title="info" (click)="PopUp()">Popup</a>
 
-      <div id="popup1" class="overlay">
-        <div class="popup">
-          <h2>Here i am</h2>
-          <a class="close" href="#">&times;</a>
-          <div class="content">
-            Thank to pop me out of that button, but now i'm done so you can close this window.
-          </div>
-        </div>
-      </div>
+
+<div class="popup" role="alert">
+  <div class="popup-container">
+    <a href="#0" class="popup-close img-replace">Close</a>
+    <p>Responsive Popup Responsive Popup Responsive Popup Responsive Popup Responsive Popup Responsive Popup</p>
+  </div>
+</div>
 
       <p class="windowsTech">Technologies:
           <span class="THtml"></span>
@@ -100,10 +100,21 @@
                     </button>
 
     </article>
-    <div class="windowsScreen">
+
+
+    <div class="windowsScreen" height="600px">
         <img src="../assets/img/EdnaCover.JPG" alt="image">
 
-        <div class="box">
+        <a href="#0" id="info" class="info popup-trigger" title="info" (click)="PopUp()">Popup</a>
+
+        <div class="popup" role="alert">
+          <div class="popup-container">
+            <a href="#0" class="popup-close img-replace">Close</a>
+            <p>Responsive Popup Responsive Popup Responsive Popup Responsive Popup Responsive Popup Responsive Popup</p>
+          </div>
+        </div>
+
+        <!-- <div class="box">
           <a class="button" href="#popup1">Let me Pop up</a>
         </div>
 
@@ -115,7 +126,9 @@
               Thank to pop me out of that button, but now i'm done so you can close this window.
             </div>
           </div>
-        </div>
+        </div> -->
+
+
 
         <p class="windowsTech">Technologies:
             <span class="THtml"></span>

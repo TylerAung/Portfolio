@@ -16,6 +16,7 @@ export class BlogDetailsService {
 
   readonly baseURL = "https://localhost:44398/api/BlogsAPI" //& localhost site
   postBlogArticle(){
+    console.log(this.formData);
     return this.http.post(this.baseURL, this.formData) //& sends request to URL with Data and get response
   }
 

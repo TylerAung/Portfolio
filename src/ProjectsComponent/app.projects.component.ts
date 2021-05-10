@@ -31,4 +31,8 @@ import { Component,ViewChild,ElementRef, OnInit, Renderer2 } from '@angular/core
     ngOnInit(){
 
     }
+
+    PopUp(){
+        console.log(this);
+    }
   }
